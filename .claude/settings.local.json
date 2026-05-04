@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm *)",
+      "PowerShell(winget *)",
+      "PowerShell(npm install *)",
+      "PowerShell(Set-ExecutionPolicy *)",
+      "WebFetch(domain:www.instagram.com)",
+      "PowerShell(pip install *)",
+      "PowerShell(python -m pip install instaloader -q)",
+      "PowerShell(python \"P:\\\\.claude\\\\natalia\\\\fetch_ig.py\")",
+      "WebFetch(domain:www.avenida.studio)",
+      "PowerShell(python -c \"from PIL import Image; img = Image.open\\(r'P:\\\\.claude\\\\natalia\\\\fotos\\\\milei.jfif'\\); img.save\\(r'P:\\\\.claude\\\\natalia\\\\fotos\\\\milei.jpg', 'JPEG', quality=95\\); print\\('OK', img.size\\)\")",
+      "PowerShell(Get-ChildItem \"P:\\\\.claude\\\\natalia\\\\FOTOS\\\\infancia\" -Force | ForEach-Object { $_.Name }; Write-Host \"---EMBARAZO---\"; Get-ChildItem \"P:\\\\.claude\\\\natalia\\\\FOTOS\\\\embarazo\" -Force | ForEach-Object { $_.Name }; Write-Host \"---MOMENTOS---\"; Get-ChildItem \"P:\\\\.claude\\\\natalia\\\\FOTOS\\\\momentos\" -Force | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem \"P:\\\\.claude\\\\natalia\\\\FOTOS\\\\avatar perfil\" -Force | ForEach-Object { $_.Name }; Write-Host \"---NUEVA CARPETA 2---\"; Get-ChildItem \"P:\\\\.claude\\\\natalia\\\\FOTOS\\\\Nueva carpeta \\(2\\)\" -Force | ForEach-Object { $_.Name })",
+      "PowerShell(git *)"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: es
+
+media_folder: fotos
+public_folder: /fotos
+
+collections:
+  - name: pagina
+    label: "Página web"
+    files:
+
+      - label: "Precios"
+        name: precios
+        file: data/content.json
+        format: json
+        fields:
+          - label: Precios
+            name: precios
+            widget: list
+            label_singular: Paquete
+            fields:
+              - { label: Etiqueta, name: tag, widget: string, hint: "Ej: Sesión básica" }
+              - { label: Nombre, name: nombre, widget: string, hint: "Ej: Esencial" }
+              - { label: Precio, name: precio, widget: string, hint: "Ej: $85,000" }
+              - { label: Moneda, name: moneda, widget: string, default: ARS }
+              - { label: "¿Es el más elegido?", name: destacado, widget: boolean, default: false, required: false }
+              - label: Incluye
+                name: features
+                widget: list
+                hint: "Un beneficio por línea"
+          - label: Testimonios
+            name: testimonios
+            widget: list
+            label_singular: Testimonio
+            fields:
+              - { label: Testimonio, name: texto, widget: text }
+              - { label: Nombre del cliente, name: nombre, widget: string }
+              - { label: Detalle, name: detalle, widget: string, hint: "Ej: Sesión familiar — Buenos Aires" }
+          - label: Servicios
+            name: servicios
+            widget: list
+            label_singular: Servicio
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Descripción, name: descripcion, widget: text }
+          - label: Contacto
+            name: contacto
+            widget: object
+            fields:
+              - { label: "Instagram (usuario)", name: instagram, widget: string }
+              - { label: "Instagram (URL)", name: instagram_url, widget: string }
+              - { label: "WhatsApp (para mostrar)", name: whatsapp_display, widget: string, hint: "Ej: +54 221 408-0407" }
+              - { label: "WhatsApp (número sin + ni espacios)", name: whatsapp_numero, widget: string, hint: "Ej: 542214080407" }
+              - { label: Email, name: email, widget: string }
+              - { label: Zona de trabajo, name: zona, widget: string }

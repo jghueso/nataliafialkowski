@@ -1,0 +1,67 @@
+{
+  "servicios": [
+    {
+      "titulo": "Sesión Familiar Documental",
+      "descripcion": "Fotografío a tu familia en su ambiente natural — en casa, en el parque, en su lugar favorito. Sin poses ni consignas. La vida real, tal como es."
+    },
+    {
+      "titulo": "Embarazo & Maternidad",
+      "descripcion": "Registramos este momento único — el cuerpo que espera, la emoción que crece. Sesiones íntimas y naturales que van a querer tener para siempre."
+    },
+    {
+      "titulo": "Primer Año & Recién Nacidos",
+      "descripcion": "Los primeros meses pasan volando. Guardamos esos gestos pequeños — la mirada nueva, el puño cerrado, los momentos de a dos — antes de que el tiempo los lleve."
+    }
+  ],
+  "precios": [
+    {
+      "tag": "Sesión básica",
+      "nombre": "Esencial",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": false,
+      "features": ["1 hora de sesión", "1 locación", "30 fotos editadas", "Entrega en 2 semanas", "Galería online privada"]
+    },
+    {
+      "tag": "Más elegido",
+      "nombre": "Completa",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": true,
+      "features": ["2 horas de sesión", "Hasta 2 locaciones", "60 fotos editadas", "Entrega en 10 días", "Galería online privada", "Selección de impresos"]
+    },
+    {
+      "tag": "Sesión extendida",
+      "nombre": "Premium",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": false,
+      "features": ["Medio día (4 horas)", "Locaciones ilimitadas", "Galería completa sin límite", "Entrega prioritaria en 7 días", "Álbum impreso incluido", "Mini video slideshow"]
+    }
+  ],
+  "testimonios": [
+    {
+      "texto": "Natalia capturó algo que nunca hubiéramos podido forzar: la forma en que nuestros hijos se miran. Abrimos la galería y lloramos. Literalmente.",
+      "nombre": "Lucía Martínez",
+      "detalle": "Sesión familiar — Buenos Aires"
+    },
+    {
+      "texto": "Me daba miedo que las fotos se vean producidas y falsas. Nada de eso. Son las fotos más honestas que tengo de ese momento, y las que más atesoro.",
+      "nombre": "Valentina Ríos",
+      "detalle": "Sesión de embarazo — La Plata"
+    },
+    {
+      "texto": "Sebastián tiene 8 meses y en las fotos está siendo él: curioso, risueño, impredecible. Natalia tiene una paciencia y una sensibilidad increíbles.",
+      "nombre": "Mariana & Tomás Greco",
+      "detalle": "Primer año — Buenos Aires"
+    }
+  ],
+  "contacto": {
+    "instagram": "@nataliafialkowskifotografa",
+    "instagram_url": "https://www.instagram.com/nataliafialkowskifotografa/",
+    "whatsapp_display": "+54 221 408-0407",
+    "whatsapp_numero": "542214080407",
+    "email": "hola@nataliafialkowski.com",
+    "zona": "Buenos Aires, Argentina"
+  }
+}
