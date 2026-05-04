@@ -1,0 +1,28 @@
+{
+  "precios": [
+    {
+      "tag": "Sesión básica",
+      "nombre": "Esencial",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": false,
+      "features": ["1 hora de sesión", "1 locación", "30 fotos editadas", "Entrega en 2 semanas", "Galería online privada"]
+    },
+    {
+      "tag": "Más elegido",
+      "nombre": "Completa",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": true,
+      "features": ["2 horas de sesión", "Hasta 2 locaciones", "60 fotos editadas", "Entrega en 10 días", "Galería online privada", "Selección de impresos"]
+    },
+    {
+      "tag": "Sesión extendida",
+      "nombre": "Premium",
+      "precio": "$XX,000",
+      "moneda": "ARS",
+      "destacado": false,
+      "features": ["Medio día (4 horas)", "Locaciones ilimitadas", "Galería completa sin límite", "Entrega prioritaria en 7 días", "Álbum impreso incluido", "Mini video slideshow"]
+    }
+  ]
+}

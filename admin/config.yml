@@ -12,75 +12,75 @@ collections:
     label: "Página web"
     files:
 
-      - label: "Galería — Categorías y fotos"
+      - label: "Galería de fotos"
         name: galeria
-        file: data/content.json
+        file: data/galeria.json
         format: json
+        editor:
+          preview: false
         fields:
           - label: Categorías
             name: categorias
             widget: list
             label_singular: Categoría
+            summary: "{{fields.label}}"
             fields:
+              - { label: "Nombre de la categoría", name: label, widget: string }
               - { label: "ID (no cambiar)", name: id, widget: string }
-              - { label: Nombre visible, name: label, widget: string }
               - label: Fotos
                 name: fotos
                 widget: list
                 label_singular: Foto
-                field: { label: Foto, name: foto, widget: image }
+                summary: "{{fields.src}}"
+                fields:
+                  - { label: Foto, name: src, widget: image }
 
-      - label: "Precios y Paquetes"
+      - label: "Precios"
         name: precios
-        file: data/content.json
+        file: data/precios.json
         format: json
+        editor:
+          preview: false
         fields:
-          - label: Precios
+          - label: Paquetes
             name: precios
             widget: list
             label_singular: Paquete
+            summary: "{{fields.nombre}}"
             fields:
               - { label: Etiqueta, name: tag, widget: string, hint: "Ej: Sesión básica" }
               - { label: Nombre, name: nombre, widget: string }
               - { label: Precio, name: precio, widget: string, hint: "Ej: $85,000" }
               - { label: Moneda, name: moneda, widget: string, default: ARS }
-              - { label: "¿Es el más elegido?", name: destacado, widget: boolean, default: false, required: false }
+              - { label: "¿Destacado?", name: destacado, widget: boolean, default: false, required: false }
               - label: Incluye
                 name: features
                 widget: list
-                hint: "Un beneficio por línea"
+                label_singular: Beneficio
 
       - label: "Testimonios"
         name: testimonios
-        file: data/content.json
+        file: data/testimonios.json
         format: json
+        editor:
+          preview: false
         fields:
           - label: Testimonios
             name: testimonios
             widget: list
             label_singular: Testimonio
+            summary: "{{fields.nombre}}"
             fields:
               - { label: Testimonio, name: texto, widget: text }
-              - { label: Nombre del cliente, name: nombre, widget: string }
+              - { label: Nombre, name: nombre, widget: string }
               - { label: Detalle, name: detalle, widget: string, hint: "Ej: Sesión familiar — Buenos Aires" }
-
-      - label: "Servicios"
-        name: servicios
-        file: data/content.json
-        format: json
-        fields:
-          - label: Servicios
-            name: servicios
-            widget: list
-            label_singular: Servicio
-            fields:
-              - { label: Título, name: titulo, widget: string }
-              - { label: Descripción, name: descripcion, widget: text }
 
       - label: "Contacto"
         name: contacto
-        file: data/content.json
+        file: data/contacto.json
         format: json
+        editor:
+          preview: false
         fields:
           - label: Contacto
             name: contacto
@@ -89,6 +89,6 @@ collections:
               - { label: "Instagram (usuario)", name: instagram, widget: string }
               - { label: "Instagram (URL)", name: instagram_url, widget: string }
               - { label: "WhatsApp (para mostrar)", name: whatsapp_display, widget: string }
-              - { label: "WhatsApp (número sin + ni espacios)", name: whatsapp_numero, widget: string, hint: "Ej: 542214080407" }
+              - { label: "WhatsApp (número sin + ni espacios)", name: whatsapp_numero, widget: string }
               - { label: Email, name: email, widget: string }
               - { label: Zona de trabajo, name: zona, widget: string }

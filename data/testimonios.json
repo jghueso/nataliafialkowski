@@ -1,0 +1,19 @@
+{
+  "testimonios": [
+    {
+      "texto": "Natalia capturó algo que nunca hubiéramos podido forzar: la forma en que nuestros hijos se miran. Abrimos la galería y lloramos. Literalmente.",
+      "nombre": "Lucía Martínez",
+      "detalle": "Sesión familiar — Buenos Aires"
+    },
+    {
+      "texto": "Me daba miedo que las fotos se vean producidas y falsas. Nada de eso. Son las fotos más honestas que tengo de ese momento, y las que más atesoro.",
+      "nombre": "Valentina Ríos",
+      "detalle": "Sesión de embarazo — La Plata"
+    },
+    {
+      "texto": "Sebastián tiene 8 meses y en las fotos está siendo él: curioso, risueño, impredecible. Natalia tiene una paciencia y una sensibilidad increíbles.",
+      "nombre": "Mariana & Tomás Greco",
+      "detalle": "Primer año — Buenos Aires"
+    }
+  ]
+}
