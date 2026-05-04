@@ -12,7 +12,25 @@ collections:
     label: "Página web"
     files:
 
-      - label: "Precios"
+      - label: "Galería — Categorías y fotos"
+        name: galeria
+        file: data/content.json
+        format: json
+        fields:
+          - label: Categorías
+            name: categorias
+            widget: list
+            label_singular: Categoría
+            fields:
+              - { label: "ID (no cambiar)", name: id, widget: string }
+              - { label: Nombre visible, name: label, widget: string }
+              - label: Fotos
+                name: fotos
+                widget: list
+                label_singular: Foto
+                field: { label: Foto, name: foto, widget: image }
+
+      - label: "Precios y Paquetes"
         name: precios
         file: data/content.json
         format: json
@@ -23,7 +41,7 @@ collections:
             label_singular: Paquete
             fields:
               - { label: Etiqueta, name: tag, widget: string, hint: "Ej: Sesión básica" }
-              - { label: Nombre, name: nombre, widget: string, hint: "Ej: Esencial" }
+              - { label: Nombre, name: nombre, widget: string }
               - { label: Precio, name: precio, widget: string, hint: "Ej: $85,000" }
               - { label: Moneda, name: moneda, widget: string, default: ARS }
               - { label: "¿Es el más elegido?", name: destacado, widget: boolean, default: false, required: false }
@@ -31,6 +49,12 @@ collections:
                 name: features
                 widget: list
                 hint: "Un beneficio por línea"
+
+      - label: "Testimonios"
+        name: testimonios
+        file: data/content.json
+        format: json
+        fields:
           - label: Testimonios
             name: testimonios
             widget: list
@@ -39,6 +63,12 @@ collections:
               - { label: Testimonio, name: texto, widget: text }
               - { label: Nombre del cliente, name: nombre, widget: string }
               - { label: Detalle, name: detalle, widget: string, hint: "Ej: Sesión familiar — Buenos Aires" }
+
+      - label: "Servicios"
+        name: servicios
+        file: data/content.json
+        format: json
+        fields:
           - label: Servicios
             name: servicios
             widget: list
@@ -46,13 +76,19 @@ collections:
             fields:
               - { label: Título, name: titulo, widget: string }
               - { label: Descripción, name: descripcion, widget: text }
+
+      - label: "Contacto"
+        name: contacto
+        file: data/content.json
+        format: json
+        fields:
           - label: Contacto
             name: contacto
             widget: object
             fields:
               - { label: "Instagram (usuario)", name: instagram, widget: string }
               - { label: "Instagram (URL)", name: instagram_url, widget: string }
-              - { label: "WhatsApp (para mostrar)", name: whatsapp_display, widget: string, hint: "Ej: +54 221 408-0407" }
+              - { label: "WhatsApp (para mostrar)", name: whatsapp_display, widget: string }
               - { label: "WhatsApp (número sin + ni espacios)", name: whatsapp_numero, widget: string, hint: "Ej: 542214080407" }
               - { label: Email, name: email, widget: string }
               - { label: Zona de trabajo, name: zona, widget: string }
